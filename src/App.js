@@ -8,14 +8,24 @@ function App() {
   const [users, setUsers] = useState([]);
   const [temp, setTemp] = useState([]);
   const [name, setName] = useState([]);
-
+  const [data, setData] = useState([]);
+  const [error, setError] = useState(false);
 
   const LoadingSpinner = () => {
- 
+
 
     return (
       <div>
         {loading ? <div>Loading...</div> : null}
+      </div>
+    );
+  };
+  const LoadingError = () => {
+
+
+    return (
+      <div>
+        {data.length === 0 ? <div>No movies Found</div> : null}
       </div>
     );
   };
@@ -30,25 +40,32 @@ function App() {
     e.preventDefault();
 
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${users}&appid=4f13ad415eaff4542453cda4f44af349&units=metric`
+      `https://www.omdbapi.com/?s=${users}&apikey=263d22d8`
     )
       .then((response) => {
         return response.json();
       })
-      .then((data) => {
-        setTemp(data.main.temp)
-        setName(data.name)
+      .then((value) => {
+        setData(value.Search)
+        console.log(value.Search)
+        // setTemp(data.main.temp)
+        // setName(data.name)
       })
-      .catch(error => console.log(error))
-      
-      setLoading(false);
+      .catch(error => {
+        console.log(error)
+        setError(true)
+      }
+
+      )
+
+    setLoading(false);
 
   };
 
   return (
-    
+
     <center>
-       
+
       <div className="search-conatiner">
         <input onChange={changeEvent} placeholder=" Search by Address"></input>
         <button onClick={clickEvent}>Search</button>
@@ -56,9 +73,25 @@ function App() {
 
       <div>{temp}</div>
       <div>{name}</div>
+      {data.map(movie =>
+        <center>
+          <div class="card1">
+            <img src={movie.Poster}></img>
+            <div class="container1">
+              <h4><b>{movie.Title}</b></h4>
+              <p>Architect & Engineer</p>
+            </div>
+          </div>
+        </center>
+
+
+
+      )
+      }
       <LoadingSpinner />
+      <LoadingError />
     </center>
-    
+
   );
 }
 
