@@ -74,6 +74,9 @@ body {
   height: 40%;
   margin-bottom: 10%;
 }
+center{
+  margin-top: 20%;
+}
 
 /* On mouse-over, add a deeper shadow */
 .card1:hover {
