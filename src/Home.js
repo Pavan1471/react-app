@@ -1,5 +1,5 @@
-// export default function Home() {
-//     return (
-//         <ConnectWallet theme="dark" />
-//     );
-//     }  
+const Home = () => {
+    return <h1>Home</h1>;
+  };
+  
+  export default Home;

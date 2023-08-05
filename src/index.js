@@ -6,11 +6,13 @@ import Home from './Home'
 
 
 import reportWebVitals from './reportWebVitals';
+import Layout from './Layout';
 // import Sample from './components/Samplec';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+
     {/* <Home/> */}
     {/* <Sample/> */}
     
