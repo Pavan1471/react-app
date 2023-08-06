@@ -1,23 +1,34 @@
 import { Outlet, Link } from "react-router-dom";
+import home from './home.png'
+import './App.css';
 
 const Layout = () => {
   return (
     <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/blogs">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+     <Outlet />
+    <div className="footer">
+      
+     {/* <div className="nav"> */}
+     <Link to="/">
+              <img className="foot" src={home}></img>
+            </Link>
+      
+      
+      <Link to="/blogs">
+              <img className="foot"src={home}></img>
+            </Link>
+      
+      
+      <Link to="/contact">
+              <img className="foot"src={home}></img>
+            </Link>
+      
+     <Link to="/blogs">
+              <img className="foot" src={home}></img>
+     </Link>
+     {/* </div> */}
+    </div>
 
-      <Outlet />
     </>
   )
 };

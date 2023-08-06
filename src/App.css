@@ -82,12 +82,64 @@ center{
 .card1:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+.con{
+ 
+  /* position: relative;
+  bottom: 0; */
+  margin-top: 590px;
+  background-color: whitesmoke;
+  padding: 10px;
+ 
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  position:sticky;
+  bottom: 0;
+}
+.footer{
+  
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: whitesmoke;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+padding-top: 10px;
+padding-bottom: 10px;
+/* border-radius: 10px; */
+margin-bottom: 0px;
+
+
+
+
+}
+.foot{
+  
+  
+  width: 30px;
+  height:30px;
+  
+}
+foot:active{
+  background-color:orange ;
+  
+  /* border-radius: 50%; */
+
+}
+
 
 /* Add some padding inside the card container */
 .container1 {
   padding: 2px 16px;
 }
+img{
+  width: 40px;
 
+  /* margin-top: 700px; */
+}
 
 /* img {
   width: 40px;
