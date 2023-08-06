@@ -19,7 +19,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./Home";
 // import Blogs from "./pages/Blogs";
-import Contact from "./Contact";
+import Cart from "./Cart";
 // import NoPage from "./pages/NoPage";
 
 
@@ -31,7 +31,7 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/"  element={<Home />} />
-           <Route path="contact" element={<Contact />} />
+           <Route path="cart" element={<Cart />} />
           {/* <Route path="blogs" element={<Blogs />} />
           <Route path="*" element={<NoPage />} /> */}
         </Route>
