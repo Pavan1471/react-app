@@ -7,9 +7,12 @@ import Home from './Home'
 
 import reportWebVitals from './reportWebVitals';
 import Layout from './Layout';
+import { Provider } from 'react-redux';
+import { Store } from './Store';
 // import Sample from './components/Samplec';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <Provider store={Store}>
   <React.StrictMode>
     <App />
 
@@ -17,6 +20,7 @@ root.render(
     {/* <Sample/> */}
     
   </React.StrictMode>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
