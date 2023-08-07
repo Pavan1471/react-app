@@ -2,7 +2,7 @@ import React from "react";
 import {useSelector } from "react-redux/es/hooks/useSelector";
 const Cart = () => {
   const cart = useSelector((state)=>state.CartReducer.cartValues);
-  const cartEmpty = useSelector((state)=>state.CartReducer.cartValues.length);
+  // const cartEmpty = useSelector((state)=>state.CartReducer.cartValues.length);
     return (
       <center>
 
