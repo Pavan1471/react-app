@@ -5,10 +5,7 @@ const Cart = () => {
   const cartEmpty = useSelector((state)=>state.CartReducer.cartValues.length);
     return (
       <center>
-        {/* if(cartEmpty.length===0){
-<div>No items added</div>
-        }
-         */}
+
 
 
         
