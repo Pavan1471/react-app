@@ -7,9 +7,9 @@ import { incrementcart } from "./CartReducer";
 
 const Home = () => {
   const dispatch = useDispatch();
-  const onClick = (productName) => {
-    dispatch(incrementcart(productName));
-  };
+  // const onClick = (productName) => {
+  //   dispatch(incrementcart(productName));
+  // };
 
   return (
     <div>
