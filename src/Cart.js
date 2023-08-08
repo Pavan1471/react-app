@@ -1,42 +1,47 @@
 import React from "react";
+import cartlogo from './cart.png'
+import { connect } from "react-redux";
+import { useDispatch } from "react-redux";
+import { removecart } from "./CartReducer";
 import {useSelector } from "react-redux/es/hooks/useSelector";
 const Cart = () => {
+  const dispatch = useDispatch();
   const cart = useSelector((state)=>state.CartReducer.cartValues);
   const cartEmpty = useSelector((state)=>state.CartReducer.cartValues.length);
     return (
       <center>
+{
+  cart.length===0 ?
 
-
-
-        
+  <div>
+    
+    <img className="cart-logo" src={cartlogo}></img>
+    <div className="cart-text">No items added to cart</div>
+  </div>
+  
+  :
+  
+    
+  <div>
+  {cart.map(function (data) {
+    return (
+      <div className="cart-container">
+        <img src={data.img}></img>
         <div>
-      {cart.map(function (data) {
-        return (
-          <center>
-            <div class="card">
-              <img src={data.img} alt="Image"></img>
+        <div className="cart-name">{data.title}</div>
+        <div>{data.price} $</div>
+        </div>
+        <div >
+          <button onClick={()=>dispatch(removecart(data.id))} >Remove</button>
 
-              <div class="card-content">
-                <p>{data.title}</p>
-                <p>{data.price}$</p>{" "}
-                <p>
-                  <bold>Quantity:</bold>
-                  {data.quantity}
-                </p>
-                <br></br>
-                <br></br>
-                <button
-                
-                >
-                  Add to cart
-                </button>
-              </div>
-            </div>
-          </center>
-        );
-      })}
-     
-    </div>
+        </div>
+
+      </div>
+    );
+  })}
+ 
+</div>
+}
       </center>
     )
   };

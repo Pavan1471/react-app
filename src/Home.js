@@ -4,9 +4,12 @@ import "./App.css";
 import { connect } from "react-redux";
 import { useDispatch } from "react-redux";
 import { incrementcart } from "./CartReducer";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
   const dispatch = useDispatch();
+  const notify = () => toast("Wow so easy!");
   // const onClick = (productName) => {
   //   dispatch(incrementcart(productName));
   // };
