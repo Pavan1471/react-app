@@ -1,6 +1,7 @@
 import Header from "./Header";
 import product from "./productData";
 import "./App.css";
+import React, { useState,useEffect } from "react";
 import { connect } from "react-redux";
 import { useDispatch } from "react-redux";
 import { incrementcart } from "./CartReducer";
@@ -8,15 +9,47 @@ import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
+  const [search, setSearch] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  // const filteredProducts = product;
+
   const dispatch = useDispatch();
-  const notify = () => toast("Wow so easy!");
+  // const notify = () => toast("Wow so easy!");
   // const onClick = (productName) => {
   //   dispatch(incrementcart(productName));
-  // };
-
+  //  
+function handleSearch(){
+  
+  console.log(search)
+  // search.
+  // const item = "samsung"
+  setFilteredProducts(product.filter(function(product) {
+    return product.title.toLowerCase().includes(search.toLowerCase());
+  }));
+    console.log(filteredProducts)
+    // return filteredProducts;
+}
+useEffect(() => {
+  // This effect will run once when the component mounts.
+  setFilteredProducts(product);
+}, []);
   return (
-    <div>
-      {product.map(function (data) {
+    
+    <>
+    
+<center>
+
+<div class="search">
+        <input value={search} onChange={(e) => setSearch(e.target.value)} className="search-input" placeholder=" Search..." type="text"></input>
+        <button className="btnn" type="submit"
+        
+        onClick={handleSearch}
+      >Search</button>
+      </div>
+</center>
+
+    <div className="card-container">
+      {filteredProducts.map(function (data) {
         return (
           <center>
             <div class="card">
@@ -24,7 +57,7 @@ const Home = () => {
 
               <div class="card-content">
                 <p>{data.title}</p>
-                <p>{data.price}$</p>{" "}
+                <p>{data.price}$</p>
                 <p>
                   <bold>Quantity:</bold>
                   {data.quantity}
@@ -41,11 +74,9 @@ const Home = () => {
           </center>
         );
       })}
-      <center>Shopping App</center>
-      <Header />
-      <Header />
-      <Header />
     </div>
+    </>
+    
   );
 };
 
