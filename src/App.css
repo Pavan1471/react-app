@@ -117,6 +117,11 @@ margin-top: 20px;
 
 
 
+
+}
+#notfound{
+  width: 50%;
+  height: 50%;
 }
 .search-input{
   width: 80%;

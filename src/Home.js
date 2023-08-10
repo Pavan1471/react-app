@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { incrementcart } from "./CartReducer";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+  import notfound from './notfound.gif'
 
 const Home = () => {
   const [search, setSearch] = useState("");
@@ -36,8 +37,7 @@ useEffect(() => {
   return (
     
     <>
-    
-<center>
+    <center>
 
 <div class="search">
         <input value={search} onChange={(e) => setSearch(e.target.value)} className="search-input" placeholder=" Search..." type="text"></input>
@@ -48,6 +48,17 @@ useEffect(() => {
       </div>
 </center>
 
+    {filteredProducts.length===0?
+    <center>
+      
+      <img id="notfound" src={notfound}></img>
+      <div className="cart-text">No Search items</div>
+    </center>
+    :
+
+
+    <>
+    
     <div className="card-container">
       {filteredProducts.map(function (data) {
         return (
@@ -75,6 +86,10 @@ useEffect(() => {
         );
       })}
     </div>
+    </>
+
+    }
+
     </>
     
   );
