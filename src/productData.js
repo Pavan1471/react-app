@@ -1,7 +1,7 @@
 export default [
     {
       id: 1,
-      title: "samsung",
+      title: "Samsung Galaxy",
       price: 700.0,
       img: "https://res.cloudinary.com/drecbsopp/image/upload/v1627398399/samasung-galaxy-a51-8gb-8uh_tndbgv.jpg",
       quantity: 1,
@@ -12,6 +12,7 @@ export default [
       price: 600.0,
       img: "https://res.cloudinary.com/drecbsopp/image/upload/v1627398477/MotoGPowerDual_2021_Reformatted_1_330x_wp8gve.png",
       quantity: 1,
+      description:"Samsung Galaxy is Samsung Electronics' flagship line of Android smartphones and tablets. The original Samsung Galaxy",
     },
     {
       id: 3,

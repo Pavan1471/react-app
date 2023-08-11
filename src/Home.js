@@ -1,6 +1,7 @@
 import Header from "./Header";
 import product from "./productData";
 import "./App.css";
+import { Outlet, Link } from "react-router-dom";
 import React, { useState,useEffect } from "react";
 import { connect } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -63,8 +64,11 @@ useEffect(() => {
       {filteredProducts.map(function (data) {
         return (
           <center>
+            
             <div class="card">
+            <Link to={`/product/${data.id}`} key={data.id}>
               <img src={data.img} alt="Image"></img>
+              </Link>
 
               <div class="card-content">
                 <p>{data.title}</p>
@@ -73,6 +77,7 @@ useEffect(() => {
                   <bold>Quantity:</bold>
                   {data.quantity}
                 </p>
+                
                 <br></br>
                 <br></br>
                 <button
@@ -82,6 +87,7 @@ useEffect(() => {
                 </button>
               </div>
             </div>
+           
           </center>
         );
       })}
