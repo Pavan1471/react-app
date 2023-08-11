@@ -152,24 +152,32 @@ h3{
 }
 #blue{
   padding: 20px;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: blue;
   border: 2px solid;
 }
+.card-title{
+  font-weight: bold;
+  margin-top: 10px;
+}
+.card-price{
+  font-size: 20px;
+  margin-top: 10px;
+}
 #black{
   padding: 20px;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color:black;
   border: 2px solid;
 }
 #white{
   padding: 20px;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color:white;
   border: 2px solid;
@@ -226,20 +234,29 @@ a{
   border: 1px solid #ccc;
   padding: 10px;
   align-items: center;
-  height: 210px;
+  height: 230px;
   border-radius: 15px;
   margin-bottom: -40px;
 }
 button{
   padding: 10px;
   border-radius: 10px;
+  margin-top: -40px;
 }
 .card-content {
   flex: 3;
 }
+.cartimg{
+  width: 30%;
+}
+.cart-names{
+  
+}
 
-img {
-  width: 100%;
+.img {
+  width: 90px;
+  height: 50px;
+  /* height: 100%; */
   /* margin-bottom: px; */
 }
 
@@ -266,11 +283,6 @@ foot:active{
 .container1 {
   padding: 2px 16px;
 }
-img{
-  width: 40px;
-
-  /* margin-top: 700px; */
-}
 
 /* img {
   width: 40px;
@@ -291,12 +303,14 @@ img{
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
+  width: 320px;
+  align-items: center;
   margin-bottom: 20px;
 
 }
 .cart-name{
-  width: 200px;
+  width: 120px;
+  font-weight: 500;
 }
 
 .cartqua{

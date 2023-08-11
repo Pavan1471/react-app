@@ -28,7 +28,7 @@ const Layout = () => {
       <Link to="/cart">
       
               <img className="foot"src={cart}></img>
-              <span className="cartqua">{cart_quantity}</span>
+              {/* <span className="cartqua">{cart_quantity}</span> */}
             </Link>
       
      <Link to="/blogs">

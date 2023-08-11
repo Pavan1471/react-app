@@ -67,16 +67,16 @@ useEffect(() => {
             
             <div class="card">
             <Link to={`/product/${data.id}`} key={data.id}>
-              <img src={data.img} alt="Image"></img>
+              <img className="img" src={data.img} alt="Image"></img>
               </Link>
 
               <div class="card-content">
-                <p>{data.title}</p>
-                <p>{data.price}$</p>
-                <p>
+                <p className="card-title">{data.title}</p>
+                <p className="card-price">{data.newPrice}$</p>
+                {/* <p>
                   <bold>Quantity:</bold>
                   {data.quantity}
-                </p>
+                </p> */}
                 
                 <br></br>
                 <br></br>

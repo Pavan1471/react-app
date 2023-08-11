@@ -26,10 +26,10 @@ const Cart = () => {
   {cart.map(function (data) {
     return (
       <div className="cart-container">
-        <img src={data.img}></img>
+        <img className="cartimg" src={data.img}></img>
         <div>
         <div className="cart-name">{data.title}</div>
-        <div>{data.price} $</div>
+        <div>{data.newPrice} $</div>
         </div>
         <div >
           <button onClick={()=>dispatch(removecart(data.id))} >Remove</button>

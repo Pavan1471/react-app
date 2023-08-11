@@ -16,7 +16,7 @@ function Product() {
           <img className="product-img" src={productdata.img}></img>
         </center>
         <div className="product-name">{productdata.title}</div>
-        <div className="product-price">{productdata.price} $</div>
+        <div className="product-price">{productdata.newPrice} $</div>
       </div>
       <h3>Description</h3>
       <div className="desc">
