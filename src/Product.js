@@ -20,7 +20,7 @@ function Product() {
       </div>
       <h3>Description</h3>
       <div className="desc">
-      Samsung Galaxy is Samsung Electronics' flagship line of Android smartphones and tablets. The original Samsung Galaxy
+      ike Air technology consists of pressurised air inside a tough yet flexible bag, and provides more flexibility and spring without compromising structure.
       </div>
       <h3>Color</h3>
     <div className="colors">
