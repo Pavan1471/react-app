@@ -19,7 +19,7 @@ const Layout = () => {
             </Link>
       
       
-      <Link to="/blogs">
+      <Link to="/wishlist">
               
               <img className="foot"src={wishlist}></img>
             </Link>

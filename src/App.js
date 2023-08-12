@@ -19,7 +19,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./Home";
 import Product from './Product';
-// import Blogs from "./pages/Blogs";
+import Wishlist from "./Wishlist";
 import Cart from "./Cart";
 // import NoPage from "./pages/NoPage";
 
@@ -34,8 +34,8 @@ export default function App() {
           <Route path="/"  element={<Home />} />
            <Route path="cart" element={<Cart />} />
            <Route path="/product/:userId" element={<Product/>}/>
-          {/* <Route path="blogs" element={<Blogs />} />
-          <Route path="*" element={<NoPage />} /> */}
+          <Route path="/wishlist" element={<Wishlist />} />
+          {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
