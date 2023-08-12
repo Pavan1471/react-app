@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import product from "./productData";
-import './App.css'
+import "./App.css";
 
 function Product() {
   console.log(useParams);
@@ -15,22 +15,23 @@ function Product() {
         <center>
           <img className="product-img" src={productdata.img}></img>
         </center>
-        <div className="product-name">{productdata.title}</div>
-        <div className="product-price">{productdata.newPrice} $</div>
       </div>
+     <div className="product-bg">
+     <div className="product-name">{productdata.title}</div>
+        <div className="product-price">{productdata.newPrice} $</div>
       <h3>Description</h3>
       <div className="desc">
-      ike Air technology consists of pressurised air inside a tough yet flexible bag, and provides more flexibility and spring without compromising structure.
+        Nike Air technology consists of pressurised air inside a tough yet
+        flexible bag, and provides more flexibility and spring without
+        compromising structure.
       </div>
       <h3>Color</h3>
-    <div className="colors">
+      <div className="colors">
         <div id="blue"></div>
         <div id="black"></div>
         <div id="white"></div>
-        
-
-    </div>
-
+      </div>
+     </div>
     </>
   );
 }
