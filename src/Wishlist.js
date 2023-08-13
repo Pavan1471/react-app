@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import wishlist from './wishlist.png'
 import './App.css';
@@ -11,6 +13,9 @@ function Wishlist(){
     <img className="cart-logoo" src={wishlist}></img>
     <div className="cart-textt">No items added to wishlist</div>
   </div>
+
+
+
   
         </center>
         </>

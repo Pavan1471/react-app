@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { useDispatch } from "react-redux";
 import { incrementcart } from "./CartReducer";
+import { AddtoWishlist } from "./CartReducer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import notfound from "./notfound.gif";
