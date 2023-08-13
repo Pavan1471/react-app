@@ -27,8 +27,11 @@ const Layout = () => {
       
       <Link to="/cart">
       
+              <div className="cart">
+              <span class="count">{cart_quantity}</span>
               <img className="foot"src={cart}></img>
-              {/* <span className="cartqua">{cart_quantity}</span> */}
+
+              </div>
             </Link>
       
      <Link to="/blogs">
