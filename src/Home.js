@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <>
       <center>
-        <div class="search">
+        {/* <div class="search">
           <input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -52,7 +52,17 @@ const Home = () => {
           <button className="btnn" type="submit" onClick={handleSearch}>
             Search
           </button>
-        </div>
+        </div> */}
+   <div class="search">
+        <input
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        type="text"
+         placeholder="Search..."/>
+        <button onClick={handleSearch} type="submit">Go</button>
+      </div>
+
+        
       </center>
 
       {filteredProducts.length === 0 ? (
@@ -85,7 +95,7 @@ const Home = () => {
 
                       <br></br>
                       <br></br>
-                      <button onClick={() => dispatch(incrementcart(data))}>
+                      <button className="button" onClick={() => dispatch(incrementcart(data))}>
                         Add to cart
                       </button>
                     </div>

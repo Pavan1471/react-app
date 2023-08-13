@@ -32,7 +32,7 @@ const Cart = () => {
         <div>{data.newPrice} $</div>
         </div>
         <div >
-          <button onClick={()=>dispatch(removecart(data.id))} >Remove</button>
+          <button className="button" onClick={()=>dispatch(removecart(data.id))} >Remove</button>
 
         </div>
 
