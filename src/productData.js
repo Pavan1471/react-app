@@ -13,7 +13,7 @@ export default[
   {
     id:2,
     img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
-    title: "Nike Air Vapormax",
+    title: "Nike Air Vapormax Pro",
     // star: <AiFillStar className="rating-star" />,
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -38,7 +38,7 @@ export default[
   {
     id:4,
     img: "https://m.media-amazon.com/images/I/71oEKkghg-L._AC_UX575_.jpg",
-    title: "Nike Running Shoe",
+    title: "Nike Air Running Shoe",
     // star: <AiFillStar className="rating-star" />,
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -50,7 +50,7 @@ export default[
   {
     id:5,
     img: "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg",
-    title: "Flat Slip On Pumps",
+    title: "Flat Slip On Pumps Sneakers",
     // star: <AiFillStar className="rating-star" />,
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -101,7 +101,7 @@ export default[
   {
     id:9,
     img: "https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg",
-    title: "Nike Men's Sneaker",
+    title: "Nike Men's Sneaker Plus",
     // star: <AiFillStar className="rating-star" />,
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -137,7 +137,7 @@ export default[
   {
     id:12,
     img: "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg",
-    title: "Unisex-Adult Super",
+    title: "Unisex-Adult Air Super",
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
     newPrice: "139",

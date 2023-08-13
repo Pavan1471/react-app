@@ -1,6 +1,7 @@
 import Header from "./Header";
 import product from "./productData";
 import "./App.css";
+import Navbar from "./Navbar";
 import { Outlet, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
@@ -40,7 +41,9 @@ const Home = () => {
   }, []);
   return (
     <>
+       <Navbar/>
       <center>
+      
         {/* <div class="search">
           <input
             value={search}
@@ -63,6 +66,14 @@ const Home = () => {
       </div>
 
         
+      </center>
+
+      <center>
+      <div>
+   <center>
+   <img className="banner" src="https://i.pinimg.com/1200x/3d/b8/46/3db8465ae5c8845947b9b23578588639.jpg"></img>
+   </center>
+</div>
       </center>
 
       {filteredProducts.length === 0 ? (
