@@ -8,6 +8,7 @@ const Cart = () => {
   const dispatch = useDispatch();
   const cart = useSelector((state)=>state.CartReducer.cartValues);
   const cartEmpty = useSelector((state)=>state.CartReducer.cartValues.length);
+  // console.log(totalPrice)
     return (
       <center>
 {

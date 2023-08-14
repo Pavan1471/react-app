@@ -7,6 +7,7 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { useDispatch } from "react-redux";
 import { incrementcart } from "./CartReducer";
+import {addtowishlist} from './CartReducer';
 import { AddtoWishlist } from "./CartReducer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -88,7 +89,7 @@ const Home = () => {
               return (
                 <center>
                   <div class="card">
-                    <div className="wishlist-icon">
+                    <div onClick={() => dispatch(addtowishlist(data))} className="wishlist-icon">
                       <img className="addtowishlist" src={wishlisticon}></img>
                     </div>
 
