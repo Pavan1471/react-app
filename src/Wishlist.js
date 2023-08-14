@@ -54,8 +54,7 @@ function Wishlist(){
 </div>
 }
       </center>
-    )
-
+    
 
 
 
