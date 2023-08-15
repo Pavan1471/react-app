@@ -54,13 +54,7 @@ function Wishlist(){
 </div>
 }
       </center>
-    
-
-
-
-  
-    
-        </>
+</>
     )
 }
 export default Wishlist;

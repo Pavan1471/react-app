@@ -20,6 +20,7 @@ import Layout from "./Layout";
 import Home from "./Home";
 import Product from './Product';
 import Wishlist from "./Wishlist";
+import User from './User';
 import Cart from "./Cart";
 // import NoPage from "./pages/NoPage";
 
@@ -35,7 +36,7 @@ export default function App() {
            <Route path="cart" element={<Cart />} />
            <Route path="/product/:userId" element={<Product/>}/>
           <Route path="/wishlist" element={<Wishlist />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
+          <Route path="/user" element={<User />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -34,7 +34,7 @@ const Layout = () => {
               </div>
             </Link>
       
-     <Link to="/blogs">
+     <Link to="/user">
               <img className="foot" src={user}></img>
      </Link>
      {/* </div> */}
