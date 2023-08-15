@@ -370,6 +370,10 @@ h1{
 .container1 {
   padding: 2px 16px;
 }
+.user-img{
+  width: 40px;
+
+}
 
 .cart-logo{
   width: 70%;

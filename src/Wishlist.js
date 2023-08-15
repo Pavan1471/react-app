@@ -6,8 +6,16 @@ import './App.css';
 import { useDispatch } from "react-redux";
 import {useSelector } from "react-redux/es/hooks/useSelector";
 import { removefromwishlist } from "./CartReducer";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 function Wishlist(){
+  const removefromWishlist =(data)=>{
+    dispatch(removefromwishlist(data.id));
+    toast.error("Removed from cart");
+
+  }
     const dispatch = useDispatch();
   const wishlists = useSelector((state)=>state.CartReducer.wishlistValues);
   console.log(wishlist)
@@ -16,6 +24,8 @@ function Wishlist(){
         <>
         
         <center>
+        <ToastContainer autoClose={2000}
+/>
             
 {
   wishlists.length===0 ?
@@ -43,7 +53,7 @@ function Wishlist(){
         <div>{data.newPrice} $</div>
         </div>
         <div >
-          <button className="button" onClick={()=>dispatch(removefromwishlist(data.id))} >Remove</button>
+          <button className="button" onClick={()=>removefromWishlist(data.id)} >Remove</button>
 
         </div>
 

@@ -9,18 +9,27 @@ import { useDispatch } from "react-redux";
 import { incrementcart } from "./CartReducer";
 import {addtowishlist} from './CartReducer';
 import { AddtoWishlist } from "./CartReducer";
-import { ToastContainer, toast } from "react-toastify";
+// import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import notfound from "./notfound.gif";
 import wishlisticon from "./wishlist-icon.png";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 const Home = () => {
+  const notify = () => toast("Added to Wishlist");
   const [search, setSearch] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
   // const filteredProducts = product;
 
   const dispatch = useDispatch();
-  // const notify = () => toast("Wow so easy!");
+  const AddtoCart =(data)=>{
+    dispatch(incrementcart(data));
+    toast.success("Added to Cart");
+
+  }
+  
   // const onClick = (productName) => {
   //   dispatch(incrementcart(productName));
   //
@@ -43,6 +52,8 @@ const Home = () => {
   return (
     <>
        <Navbar/>
+       <ToastContainer autoClose={2000}
+/>
       <center>
       
         {/* <div class="search">
@@ -84,13 +95,14 @@ const Home = () => {
         </center>
       ) : (
         <>
+
           <div className="card-container">
             {filteredProducts.map(function (data) {
               return (
                 <center>
                   <div class="card">
                     <div onClick={() => dispatch(addtowishlist(data))} className="wishlist-icon">
-                      <img className="addtowishlist" src={wishlisticon}></img>
+                      <img onClick={notify} className="addtowishlist" src={wishlisticon}></img>
                     </div>
 
                     <Link to={`/product/${data.id}`} key={data.id}>
@@ -107,7 +119,7 @@ const Home = () => {
 
                       <br></br>
                       <br></br>
-                      <button className="button" onClick={() => dispatch(incrementcart(data))}>
+                      <button className="button" onClick={() => AddtoCart(data)}>
                         Add to cart
                       </button>
                     </div>
@@ -123,3 +135,4 @@ const Home = () => {
 };
 
 export default Home;
+

@@ -4,13 +4,25 @@ import { connect } from "react-redux";
 import { useDispatch } from "react-redux";
 import { removecart } from "./CartReducer";
 import {useSelector } from "react-redux/es/hooks/useSelector";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+  
+
 const Cart = () => {
+  const removeFromcart =(data)=>{
+    dispatch(removecart(data));
+    toast.error("Removed from cart");
+
+  }
   const dispatch = useDispatch();
   const cart = useSelector((state)=>state.CartReducer.cartValues);
   const cartEmpty = useSelector((state)=>state.CartReducer.cartValues.length);
   // console.log(totalPrice)
     return (
+      
       <center>
+               <ToastContainer autoClose={2000}
+/>
 {
   cart.length===0 ?
 
@@ -33,7 +45,7 @@ const Cart = () => {
         <div>{data.newPrice} $</div>
         </div>
         <div >
-          <button className="button" onClick={()=>dispatch(removecart(data.id))} >Remove</button>
+          <button className="button" onClick={()=>removeFromcart(data)} >Remove</button>
 
         </div>
 
