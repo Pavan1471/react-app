@@ -11,9 +11,10 @@ function User(){
 
 
     return (
-      <div>
-        <button onClick={notify}>Notify!</button>
-        <ToastContainer />
+      <div style={{fontWeight:'bold'}}>
+        <center>
+          Loading....
+        </center>
       </div>
     );
 
