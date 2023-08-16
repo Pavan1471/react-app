@@ -13,7 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function Wishlist(){
   const removefromWishlist =(data)=>{
     dispatch(removefromwishlist(data.id));
-    toast.error("Removed from cart");
+    toast.error("Removed from wishlist");
 
   }
     const dispatch = useDispatch();
