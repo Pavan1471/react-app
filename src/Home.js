@@ -7,15 +7,14 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { useDispatch } from "react-redux";
 import { incrementcart } from "./CartReducer";
-import {addtowishlist} from './CartReducer';
+import { addtowishlist } from "./CartReducer";
 import { AddtoWishlist } from "./CartReducer";
 // import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import notfound from "./notfound.gif";
 import wishlisticon from "./wishlist-icon.png";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-  
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
   const notify = () => toast("Added to Wishlist");
@@ -24,12 +23,11 @@ const Home = () => {
   // const filteredProducts = product;
 
   const dispatch = useDispatch();
-  const AddtoCart =(data)=>{
+  const AddtoCart = (data) => {
     dispatch(incrementcart(data));
     toast.success("Added to Cart");
+  };
 
-  }
-  
   // const onClick = (productName) => {
   //   dispatch(incrementcart(productName));
   //
@@ -51,11 +49,9 @@ const Home = () => {
   }, []);
   return (
     <>
-       <Navbar/>
-       <ToastContainer autoClose={2000}
-/>
+      <Navbar />
+      <ToastContainer autoClose={2000} />
       <center>
-      
         {/* <div class="search">
           <input
             value={search}
@@ -68,24 +64,28 @@ const Home = () => {
             Search
           </button>
         </div> */}
-   <div class="search">
-        <input
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        type="text"
-         placeholder="Search..."/>
-        <button onClick={handleSearch} type="submit">Go</button>
-      </div>
-
-        
+        <div class="search">
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            type="text"
+            placeholder="Search..."
+          />
+          <button onClick={handleSearch} type="submit">
+            Go
+          </button>
+        </div>
       </center>
 
       <center>
-      <div>
-   <center>
-   <img className="banner" src="https://i.pinimg.com/1200x/3d/b8/46/3db8465ae5c8845947b9b23578588639.jpg"></img>
-   </center>
-</div>
+        <div>
+          <center>
+            <img
+              className="banner"
+              src="https://i.pinimg.com/1200x/3d/b8/46/3db8465ae5c8845947b9b23578588639.jpg"
+            ></img>
+          </center>
+        </div>
       </center>
 
       {filteredProducts.length === 0 ? (
@@ -95,14 +95,20 @@ const Home = () => {
         </center>
       ) : (
         <>
-
           <div className="card-container">
             {filteredProducts.map(function (data) {
               return (
                 <center>
                   <div class="card">
-                    <div onClick={() => dispatch(addtowishlist(data))} className="wishlist-icon">
-                      <img onClick={notify} className="addtowishlist" src={wishlisticon}></img>
+                    <div
+                      onClick={() => dispatch(addtowishlist(data))}
+                      className="wishlist-icon"
+                    >
+                      <img
+                        onClick={notify}
+                        className="addtowishlist"
+                        src={wishlisticon}
+                      ></img>
                     </div>
 
                     <Link to={`/product/${data.id}`} key={data.id}>
@@ -119,7 +125,10 @@ const Home = () => {
 
                       <br></br>
                       <br></br>
-                      <button className="button" onClick={() => AddtoCart(data)}>
+                      <button
+                        className="button"
+                        onClick={() => AddtoCart(data)}
+                      >
                         Add to cart
                       </button>
                     </div>
@@ -135,4 +144,3 @@ const Home = () => {
 };
 
 export default Home;
-
