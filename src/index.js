@@ -15,10 +15,6 @@ root.render(
   <Provider store={Store}>
   <React.StrictMode>
     <App />
-
-    {/* <Home/> */}
-    {/* <Sample/> */}
-    
   </React.StrictMode>
   </Provider>
 );
