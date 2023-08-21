@@ -11,16 +11,20 @@
   height: 40px;
   border: none;
 } */
-.product-bg{
-background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% );
-/* background-image: linear-gradient( 180.7deg,  rgba(0,213,255,1) 2.5%, rgba(79,255,255,1) 97.7% ); */
-/* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% ); */
+.product-bg {
+  background-image: radial-gradient(
+    circle 588px at 31.7% 40.2%,
+    rgba(225, 200, 239, 1) 21.4%,
+    rgba(163, 225, 233, 1) 57.1%
+  );
+  /* background-image: linear-gradient( 180.7deg,  rgba(0,213,255,1) 2.5%, rgba(79,255,255,1) 97.7% ); */
+  /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% ); */
   padding-bottom: 100px;
   border-radius: 40px 40px 0px 0px;
   padding-top: 5px;
   margin-top: 60px;
 }
-*{
+* {
   margin: 0px;
 }
 .button {
@@ -28,7 +32,7 @@ background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225,200,23
   background-color: black;
   color: white;
   border: none;
-  margin-top: 10px;  
+  margin-top: 10px;
 }
 * {
   margin: 0px;
@@ -58,9 +62,8 @@ body {
   margin-top: -20px;
   padding: 10px;
   margin-bottom: 25px;
-
 }
-.wishlist-icon{
+.wishlist-icon {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -80,7 +83,6 @@ body {
   padding: 2px 16px;
 }
 
-
 .card1 {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -89,7 +91,7 @@ body {
   height: 40%;
   margin-bottom: 10%;
 }
-center{
+center {
   margin-top: 20%;
 }
 
@@ -97,39 +99,33 @@ center{
 .card1:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.con{
- 
+.con {
   /* position: relative;
   bottom: 0; */
   margin-top: 590px;
   background-color: whitesmoke;
 
   padding: 10px;
- 
 }
-.nav{
+.nav {
   display: flex;
   justify-content: space-around;
-  position:sticky;
+  position: sticky;
   bottom: 0;
-
 }
-.cart-textt{
+.cart-textt {
   margin-top: 50px;
   font-size: 20px;
   font-weight: 400;
 }
-.cart-logoo{
+.cart-logoo {
   width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
-
 }
-.addtowishlist{
+.addtowishlist {
   width: 30px;
-    
 }
 .cart {
   position: relative;
@@ -145,7 +141,7 @@ center{
     font-size: 24px;
     color: white;
   } */
- 
+
   .count {
     position: absolute;
     top: 0;
@@ -156,19 +152,18 @@ center{
     background: #d60b28;
     width: 16px;
     height: 16px;
-    line-height:16px;
+    line-height: 16px;
     display: block;
     text-align: center;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
   }
 }
-.footer{
-  
+.footer {
   position: fixed;
   left: 0;
-  bottom:0;
+  bottom: 0;
   width: 90%;
   right: 0;
   /* border-radius: 30px; */
@@ -178,43 +173,38 @@ center{
   /* background-color: lightsteelblue; */
   color: white;
   /* background-color: ; */
-  
+
   display: flex;
   justify-content: space-around;
-padding-top: 10px;
-padding-bottom: 10px;
-/* border-radius: 10px; */
-margin-bottom: 7px;
-border-radius: 30px;
-margin-left: 5%;
-margin-right: 5%;
-/* margin-top: 20px; */
-
-
-
-
-
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-radius: 10px; */
+  margin-bottom: 7px;
+  border-radius: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* margin-top: 20px; */
 }
-.product-img{
+.product-img {
   width: 200px;
 }
-.product-name{
+.product-name {
   font-size: 25px;
   font-weight: bold;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-top: 30px;
   margin-left: 10px;
-
 }
-.desc{
+.desc {
   /* margin-top: 30px; */
   margin-left: 10px;
   margin-right: 5px;
   margin-top: 10px;
   font-weight: bold;
-  opacity:0.5 ;
+  opacity: 0.5;
 }
-h3{
+h3 {
   margin-left: 10px;
   margin-top: 10px;
 }
@@ -222,14 +212,14 @@ h3{
   mar
 } */
 
-.product-price{
+.product-price {
   font-size: 40px;
   color: red;
   margin-top: 5px;
   font-weight: bold;
   margin-left: 10px;
 }
-#blue{
+#blue {
   padding: 20px;
   width: 10px;
   height: 10px;
@@ -237,34 +227,34 @@ h3{
   background-color: blue;
   border: 2px solid;
 }
-.card-title{
+.card-title {
   font-weight: bold;
   margin-top: 10px;
 }
-.card-price{
+.card-price {
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: -10px;
   font-weight: 500;
   opacity: 0.7;
 }
-#black{
+#black {
   padding: 20px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color:black;
+  background-color: black;
   border: 2px solid;
 }
-#white{
+#white {
   padding: 20px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color:white;
+  background-color: white;
   border: 2px solid;
 }
-.colors{
+.colors {
   margin-left: 20px;
   margin-bottom: 100px;
   margin-top: 10px;
@@ -272,21 +262,20 @@ h3{
   justify-content: space-around;
   margin-right: 20px;
 }
-a{
-
+a {
   text-decoration: none;
   color: black;
 }
-#notfound{
+#notfound {
   width: 50%;
   height: 50%;
 }
-.search-input{
+.search-input {
   width: 80%;
   border-radius: 10px;
-  background-color:bisque;
+  background-color: bisque;
 }
-.card-container{
+.card-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -296,7 +285,7 @@ a{
   margin-right: 10px;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -306,7 +295,6 @@ a{
   align-items: center;
   padding: 30px;
   border-radius: 20px;
-  
 }
 
 .card {
@@ -323,7 +311,7 @@ a{
   border-radius: 15px;
   margin-bottom: -40px;
 }
-.button{
+.button {
   padding: 10px;
   border-radius: 10px;
   margin-top: -80px;
@@ -331,11 +319,10 @@ a{
 .card-content {
   flex: 3;
 }
-.cartimg{
+.cartimg {
   width: 30%;
 }
-.cart-names{
-  
+.cart-names {
 }
 
 .img {
@@ -345,24 +332,20 @@ a{
   /* margin-bottom: px; */
 }
 
-.c{
+.c {
   flex-wrap: wrap;
 }
-.foot{
-  
-  
+.foot {
   width: 30px;
-  height:30px;
-  
+  height: 30px;
 }
-foot:active{
-  background-color:orange ;
-  
+foot:active {
+  background-color: orange;
+
   /* border-radius: 50%; */
-
 }
 
-h1{
+h1 {
   margin-top: -50px;
   margin-bottom: 30px;
 }
@@ -370,36 +353,32 @@ h1{
 .container1 {
   padding: 2px 16px;
 }
-.user-img{
+.user-img {
   width: 40px;
-
 }
 
-.cart-logo{
+.cart-logo {
   width: 70%;
 }
-#logo-img{
+#logo-img {
   width: 60px;
 }
-.cart-text{
+.cart-text {
   font-size: 20px;
   font-weight: 400;
 }
-.navbar-container img{
+.navbar-container img {
   width: 30px;
   height: 30px;
-
-  
-
 }
-.banner{
+.banner {
   width: 90%;
   height: 130px;
   margin-top: -50px;
   border-radius: 20px;
   /* margin-bottom: -60px; */
 }
-.navbar-container{
+.navbar-container {
   display: flex;
   justify-content: space-between;
   margin: 0px 20px 0px 20px;
@@ -408,7 +387,7 @@ h1{
   /* background-color: wheat; */
   /* padding: 15px; */
 }
-.cart-container{
+.cart-container {
   display: flex;
   justify-content: space-evenly;
   /* background-color: aquamarine; */
@@ -419,14 +398,13 @@ h1{
   width: 320px;
   align-items: center;
   margin-bottom: 20px;
-
 }
-.cart-name{
+.cart-name {
   width: 120px;
   font-weight: 500;
 }
 
-.cartqua{
+.cartqua {
   /* background-color: red; */
   padding: 3px;
   padding-right: 3px;
@@ -448,7 +426,6 @@ h1{
 .search {
   display: inline-block;
   position: relative;
-
 }
 
 .search input[type="text"] {
@@ -462,7 +439,7 @@ h1{
 .search button[type="submit"] {
   background-color: #4e99e9;
   border: none;
-  
+
   color: #fff;
   cursor: pointer;
   padding: 10px 20px;
@@ -471,11 +448,26 @@ h1{
   position: absolute;
   top: 0;
   right: 0;
-  transition: .9s ease;
+  transition: 0.9s ease;
 }
 
 .search button[type="submit"]:hover {
   transform: scale(1.1);
   color: rgb(255, 255, 255);
   background-color: blue;
+}
+
+/* Sidebar */
+
+#mySidenav {
+  width: 60%;
+  height: 90%;
+  border-radius: 0px 0px 30px 0px;
+  background-color: aquamarine;
+  position: fixed;
+  overflow-x: hidden;
+  transition: 0.2s;
+  margin-top: -50px;
+  z-index: 2;
+  visibility: hidden;
 }
